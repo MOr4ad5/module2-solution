@@ -1,1 +1,66 @@
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 21px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tableau {
+    position: relative;
+    width: 30%;
+    background-color: #bdbdbd;
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: lightcoral;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.tableau:nth-child(2) .title {
+    background-color: darkred;
+    color: white;
+}
+
+.tableau:nth-child(3) .title {
+    background-color: khaki;
+    color: black;
+}
+
+@media (max-width: 991px) {
+    .tableau {
+        width: 48%;
+    }
+    .tableau:nth-child(3) {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .tableau {
+        width: 100%;
+    }
+}
+
